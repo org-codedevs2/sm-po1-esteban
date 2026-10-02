@@ -1,12 +1,17 @@
-# Definition of Done (DoD) - Proyecto ARKA
+# Definition of Done (DoD) - Sprint 1
 
-Para dar por completada una historia de usuario o módulo en **ARKA**, se deben cumplir los siguientes requisitos:
+Para considerar que una tarea o Historia de Usuario está totalmente **Terminada (Done)**, debe cumplir con los siguientes criterios:
 
-1. **Funcionalidad y Requerimientos:**
-   - Implementa los criterios de aceptación especificados (ej. validaciones de seguridad en claves).
-   - Las vistas, modelos y rutas en Django responden correctamente sin errores 500/404.
-2. **Seguridad y Privacidad:**
-   - Cumplimiento de la Ley 1581 de 2012 para el tratamiento de datos sensibles.
-3. **Revisión y Control de Versiones:**
-   - Pull Request aprobado por los revisores asignados en GitHub.
-   - Integración limpia con la rama `main` sin conflictos de fusión.
+## Criterios de Calidad y Código
+- [ ] El código cumple con las guías de estilo del proyecto.
+- [ ] No existen errores ni advertencias en la consola.
+- [ ] Se han realizado pruebas locales de la funcionalidad.
+
+## Git y Control de Versiones
+- [ ] Los commits tienen un mensaje claro y descriptivo.
+- [ ] Se creó el Pull Request hacia la rama principal.
+- [ ] El código ha sido revisado y aprobado por el equipo/instructor.
+
+## Documentación y Gestión
+- [ ] La Historia de Usuario asociada en GitHub Projects está actualizada.
+- [ ] Se han documentado las nuevas rutas o componentes creados.

@@ -1,6 +1,5 @@
-*
-        @ORG-codedevs2/sm-p01-esteban @<ORG>/coderowners
-/src/        @ORG-codedevs2/sm-p01-esteban @<ORG>/coderowners
-/docs/       @ORG-codedevs2/sm-p01-esteban @<ORG>/coderowners
-/.github/    @ORGcodedevs2/coderowners
-/docs/rubrica-evaluacion.md    @<ORG>/coderownersgit
+*                       @org-codedevs2/sm-p01-esteban
+/src/                   @org-codedevs2/sm-p01-esteban
+/docs/                  @org-codedevs2/sm-p01-esteban
+/.github/               @org-codedevs2/sm-p01-esteban
+/docs/rubrica-evaluacion.md   @org-codedevs2/coderownersgit
