@@ -1,11 +1,11 @@
-# Guía de Aprendizaje - Sprint 1 (ARKA)
+# Guía de Aprendizaje - Sprint 1
 
-## Objetivos del Sprint
-- Configurar el entorno virtual de Python y las dependencias de Django.
-- Diseñar y aplicar las migraciones para el módulo de Usuarios y modelos de datos.
-- Comprender el flujo de trabajo colaborativo en Git/GitHub para el equipo de desarrollo.
+## Objetivos
+1. Configuración del entorno de trabajo colaborativo en GitHub.
+2. Gestión de tareas e Historias de Usuario mediante GitHub Projects e Issues.
+3. Estructuración inicial de componentes y documentación del proyecto.
 
-## Recursos y Referencias
-1. **Documentación Django:** Vistas, Formularios, Autenticación y Modelos.
-2. **Especificación de Requerimientos:** Documento del proyecto ARKA (Módulo Usuarios / RF-NU-001).
-3. **Normativa:** Pautas para la protección de datos personales en Colombia (Ley 1581 de 2012).
+## Temas Clave
+- **Git & GitHub:** Ramas, Commits, Pull Requests, Issues, Labels, Milestones y Projects.
+- **Metodología Ágil:** Definición de Sprints, Historias de Usuario y Criterios de Aceptación.
+- **Frontend Base:** Estructura HTML/CSS y organización de módulos.

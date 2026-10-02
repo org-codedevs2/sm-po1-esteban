@@ -1,7 +1,9 @@
-# Rúbrica de Evaluación - Proyecto ARKA
+# Rúbrica de Evaluación - Sprint 1
 
-| Criterio | Excelente (5.0) | Aceptable (3.5) | Insuficiente (2.0) |
-| :--- | :--- | :--- | :--- |
-| **Cumplimiento de RF** | Todos los criterios de aceptación del requerimiento funcional se cumplen y validan. | requerimiento funciona pero omite alguna validación de entrada. | La funcionalidad presenta fallos graves o no está terminada. |
-| **Calidad en Django** | Modelos, vistas y plantillas estructuradas bajo buenas prácticas de Django. | Funciona correctamente pero presenta código redundante o sin formatear. | Fallos en migraciones, rutas rotas o errores de plantilla. |
-| **Gestión en GitHub** | Uso de ramas, plantillas de Issue/PR y revisiones de código completas. | PRs creados pero con información incompleta o commits poco descriptivos. | Commits directos a la rama principal sin revisión. |
+| Criterio | Descripción | Puntaje Máximo |
+| :--- | :--- | :---: |
+| **Configuración GitHub** | Correcta creación de Labels, Milestones, Issues y Projects. | 25% |
+| **Estructura de Código** | Organización adecuada de carpetas en `src/` e `index.html`. | 25% |
+| **Documentación** | Archivos en `docs/` completos y actualizados. | 25% |
+| **Buenas Prácticas Git** | Commits descriptivos y trabajo en ramas de trabajo. | 25% |
+| **Total** | | **100%** |
