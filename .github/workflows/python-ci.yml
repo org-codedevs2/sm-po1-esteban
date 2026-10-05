@@ -1,8 +1,10 @@
-name: Deploy Web App to GitHub Pages 🚀
+name: Multi-App CI/CD to GitHub Pages 🚀
 
 on:
   push:
     branches: [ "main", "feature/*" ]
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
 
 permissions:
@@ -31,9 +33,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🧪 Ejecutar pruebas automatizadas
+      - name: 🧪 Probar App de Suma (FastAPI / Pytest)
         run: |
-          pytest src/
+          pytest app_suma/src/
+
+      - name: 🧪 Probar App de Resta (Django / Pytest)
+        run: |
+          PYTHONPATH=app_resta pytest app_resta/
 
   deploy:
     environment:
@@ -49,7 +55,7 @@ jobs:
       - name: ⚙️ Configurar Pages
         uses: actions/configure-pages@v5
 
-      - name: 📤 Cargar artefactos web
+      - name: 📤 Cargar artefactos web (Suma y Resta)
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'public'
