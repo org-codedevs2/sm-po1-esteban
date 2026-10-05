@@ -14,4 +14,4 @@ Para considerar que una tarea o Historia de Usuario está totalmente **Terminada
 
 ## Documentación y Gestión
 - [ ] La Historia de Usuario asociada en GitHub Projects está actualizada.
-- [ ] Se han documentado las nuevas rutas o componentes creados.
+- [ ] Se ~~~~han documentado las nuevas rutas o componentes creados.
