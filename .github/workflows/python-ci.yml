@@ -5,6 +5,16 @@ on:
     branches: [ "main", "feature/*" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      numero1:
+        description: 'Primer número para sumar'
+        required: true
+        default: '15'
+      numero2:
+        description: 'Segundo número para sumar'
+        required: true
+        default: '25'
 
 jobs:
   pipeline:
@@ -42,4 +52,4 @@ jobs:
 
       - name: ➕ Ejecutar suma de dos números
         run: |
-         python src/main.py 15 25
+          python src/main.py ${{ inputs.numero1 || 15 }} ${{ inputs.numero2 || 25 }}
