@@ -11,7 +11,6 @@
 ![Pytest](https://img.shields.io/badge/Pytest-Tests-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 
 [![Ver API en Render](https://img.shields.io/badge/🌐_Ver_API_en_Render-000000?style=for-the-badge)](https://sm-po1-esteban.onrender.com)
-[![Documentación](https://img.shields.io/badge/📘_Documentación_/docs-009688?style=for-the-badge)](https://sm-po1-esteban.onrender.com/docs)
 [![GitHub Pages](https://img.shields.io/badge/📄_GitHub_Pages-222222?style=for-the-badge&logo=github&logoColor=white)](https://org-codedevs2.github.io/sm-po1-esteban/)
 
 </div>
