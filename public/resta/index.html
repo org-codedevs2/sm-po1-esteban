@@ -1,55 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resta App - Django & Actions</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .card { background-color: #1e1e38; border: 1px solid #7c3aed; padding: 30px; border-radius: 20px; box-shadow: 0 0 25px rgba(124, 58, 237, 0.3); width: 100%; max-width: 400px; text-align: center; }
-        h1 { font-size: 1.6rem; margin-bottom: 8px; color: #c084fc; }
-        p { font-size: 0.9rem; color: #a78bfa; margin-bottom: 24px; }
-        .input-group { text-align: left; margin-bottom: 16px; }
-        label { display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: #ddd6fe; margin-bottom: 6px; }
-        input { width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #5b21b6; background-color: #0f172a; color: #fff; font-size: 1rem; outline: none; transition: all 0.2s; }
-        input:focus { border-color: #a855f7; box-shadow: 0 0 10px rgba(168, 85, 247, 0.4); }
-        button { width: 100%; padding: 12px; background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: white; border: none; border-radius: 10px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; margin-top: 8px; }
-        button:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4); }
-        .result-box { margin-top: 20px; padding: 14px; background-color: #4c1d95; border: 1px solid #a855f7; border-radius: 10px; color: #f3e8ff; font-weight: 600; display: none; }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Restas de Angel</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:22px;color:#24452c;font-family:"Trebuchet MS",Arial,sans-serif;background:#d9f0cf}.wrap{width:min(880px,100%);margin:auto}.back{display:inline-block;margin-bottom:25px;color:#397046;font-weight:800;text-decoration:none}.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.paper{padding:30px;border:2px solid #315c38;border-radius:8px 22px 8px 22px;background:#fbfff8;box-shadow:8px 8px 0 #8fc58b}.paper h1{margin:10px 0 8px;font-family:Georgia,serif;font-size:2.5rem}.paper p{color:#5d8061;line-height:1.55}.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:#bce3ae;font-size:.78rem;font-weight:900}.field{margin-top:20px}.field label{display:block;margin-bottom:7px;font-size:.78rem;font-weight:900;text-transform:uppercase}.field input{width:100%;padding:14px;border:2px solid #a4d29d;border-radius:10px;color:#24452c;background:#f0faeb;font-size:1.1rem;outline:0}.field input:focus{border-color:#5b9c5a}.buttons{display:flex;gap:10px;margin-top:23px}.buttons button{flex:1;padding:14px;border:2px solid #24452c;border-radius:10px;font-weight:900;cursor:pointer}.go{color:#fff;background:#4c9650}.clear{background:#fbfff8}.result{min-height:105px;margin-top:18px;padding:18px;border-radius:13px;background:#dff1d8;font-size:1.25rem;font-weight:900}.result small{display:block;margin-top:9px;color:#5d8061;font-size:.8rem;font-weight:400}.history{padding:25px;border:2px dashed #83b67d;border-radius:15px;background:#eef9e9}.history h3{margin-top:0;font-family:Georgia,serif}.history p{color:#5d8061;font-size:.9rem}.history ol{padding-left:22px;color:#397046;line-height:2}.history button{border:0;color:#397046;background:transparent;cursor:pointer;text-decoration:underline}@media(max-width:680px){.layout{grid-template-columns:1fr}}
+</style>
 </head>
-<body>
-    <div class="card">
-        <h1>➖ Resta App</h1>
-        <p>Ingresa dos números para calcular la diferencia</p>
-        <div class="input-group">
-            <label for="num1">Primer Número</label>
-            <input type="number" id="num1" placeholder="Ej. 20" step="any">
-        </div>
-        <div class="input-group">
-            <label for="num2">Segundo Número</label>
-            <input type="number" id="num2" placeholder="Ej. 5" step="any">
-        </div>
-        <button onclick="realizarResta()">Restar Números</button>
-        <div id="resultado" class="result-box"></div>
-    </div>
-
-    <script>
-        function realizarResta() {
-            const n1 = parseFloat(document.getElementById('num1').value);
-            const n2 = parseFloat(document.getElementById('num2').value);
-            const resDiv = document.getElementById('resultado');
-
-            if (!isNaN(n1) && !isNaN(n2)) {
-                const diferencia = n1 - n2;
-                resDiv.innerText = `La resta de ${n1} menos ${n2} es: ${diferencia}`;
-                resDiv.style.display = 'block';
-            } else {
-                resDiv.innerText = '⚠️ Por favor ingresa dos números válidos';
-                resDiv.style.display = 'block';
-            }
-        }
-    </script>
-</body>
+<body><main class="wrap"><a class="back" href="../">← Volver a la mesa de trabajo</a><div class="layout"><section class="paper"><span class="badge">🧊 MODO RESTA</span><h1>Restemos juntos</h1><p>Compara dos números y encuentra la diferencia con Django.</p><div class="field"><label for="num1">Primer número</label><input id="num1" type="number" step="any" placeholder="Ej. 20"></div><div class="field"><label for="num2">Segundo número</label><input id="num2" type="number" step="any" placeholder="Ej. 7"></div><div class="buttons"><button class="go" type="button" onclick="calcular()">🧊 Restar</button><button class="clear" type="button" onclick="limpiar()">Limpiar</button><button class="clear" type="button" onclick="intercambiar()">↕ Cambiar</button></div><div class="result" id="resultado" aria-live="polite">Aquí aparecerá la respuesta.<small>Completa los dos campos para comenzar.</small></div><button class="clear" type="button" onclick="copiarResultado()">📋 Copiar resultado</button></section><aside class="history"><h3>📒 Mis cuentas</h3><p>Se quedan guardadas en este dispositivo.</p><ol id="historial"></ol><button type="button" onclick="borrarHistorial()">Borrar notas</button></aside></div></main>
+<script>const a=document.getElementById('num1'),b=document.getElementById('num2'),r=document.getElementById('resultado'),h=document.getElementById('historial');let items=JSON.parse(localStorage.getItem('angel-resta')||'[]');function pintar(){h.innerHTML=items.length?items.map(x=>`<li>${x}</li>`).join(''):'<li>Aún no hay cuentas.</li>'}function calcular(){if(a.value===''||b.value===''){r.innerHTML='🤔 Faltan números.<small>Completa los dos campos.</small>';return}const v=Number(a.value)-Number(b.value);r.innerHTML=`🎉 ${a.value} − ${b.value} = ${v}<small>Resultado listo.</small>`;items.unshift(`${a.value} − ${b.value} = ${v}`);items=items.slice(0,6);localStorage.setItem('angel-resta',JSON.stringify(items));pintar()}function limpiar(){a.value='';b.value='';r.innerHTML='Aquí aparecerá la respuesta.<small>Completa los dos campos para comenzar.</small>'}function intercambiar(){const temp=a.value;a.value=b.value;b.value=temp}async function copiarResultado(){if(r.textContent.includes('Resultado listo')){await navigator.clipboard.writeText(r.textContent);r.innerHTML='✅ Copiado al portapapeles.<small>Listo para pegar donde quieras.</small>'}}function borrarHistorial(){items=[];localStorage.removeItem('angel-resta');pintar()}[a,b].forEach(x=>x.addEventListener('keydown',e=>{if(e.key==='Enter')calcular()}));pintar();</script></body>
 </html>

@@ -1,55 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma App - Python & Actions</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0f172a; color: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        .card { background-color: #1e293b; border: 1px solid #334155; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); width: 100%; max-width: 400px; text-align: center; }
-        h1 { font-size: 1.5rem; margin-bottom: 8px; color: #38bdf8; }
-        p { font-size: 0.9rem; color: #94a3b8; margin-bottom: 24px; }
-        .input-group { text-align: left; margin-bottom: 16px; }
-        label { display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: #cbd5e1; margin-bottom: 6px; }
-        input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #475569; background-color: #0f172a; color: #fff; font-size: 1rem; outline: none; transition: border-color 0.2s; }
-        input:focus { border-color: #38bdf8; }
-        button { width: 100%; padding: 12px; background-color: #0284c7; color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: background 0.2s; margin-top: 8px; }
-        button:hover { background-color: #0369a1; }
-        .result-box { margin-top: 20px; padding: 14px; background-color: #064e3b; border: 1px solid #10b981; border-radius: 8px; color: #a7f3d0; font-weight: 600; display: none; }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sumas de Angel</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:22px;color:#30452a;font-family:"Trebuchet MS",Arial,sans-serif;background:#dcefc3}.wrap{width:min(880px,100%);margin:auto}.back{display:inline-block;margin-bottom:25px;color:#47653d;font-weight:800;text-decoration:none}.layout{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}.paper{padding:30px;border:2px solid #3e5835;border-radius:22px 8px 22px 8px;background:#fffdf2;box-shadow:8px 8px 0 #9fc378}.paper h1{margin:10px 0 8px;font-family:Georgia,serif;font-size:2.5rem}.paper p{color:#607455;line-height:1.55}.badge{display:inline-block;padding:7px 11px;border-radius:999px;background:#c9e6a5;font-size:.78rem;font-weight:900}.field{margin-top:20px}.field label{display:block;margin-bottom:7px;font-size:.78rem;font-weight:900;text-transform:uppercase}.field input{width:100%;padding:14px;border:2px solid #b5d58f;border-radius:10px;color:#30452a;background:#f4fbe9;font-size:1.1rem;outline:0}.field input:focus{border-color:#6b9c49}.buttons{display:flex;gap:10px;margin-top:23px}.buttons button{flex:1;padding:14px;border:2px solid #30452a;border-radius:10px;font-weight:900;cursor:pointer}.go{color:#fff;background:#6b9c49}.clear{background:#fffdf2}.result{min-height:105px;margin-top:18px;padding:18px;border-radius:13px;background:#e8f6d5;font-size:1.25rem;font-weight:900}.result small{display:block;margin-top:9px;color:#6b8060;font-size:.8rem;font-weight:400}.history{padding:25px;border:2px dashed #83ad62;border-radius:15px;background:#f5fbe9}.history h3{margin-top:0;font-family:Georgia,serif}.history p{color:#6b8060;font-size:.9rem}.history ol{padding-left:22px;color:#526c48;line-height:2}.history button{border:0;color:#52753e;background:transparent;cursor:pointer;text-decoration:underline}@media(max-width:680px){.layout{grid-template-columns:1fr}}
+</style>
 </head>
-<body>
-<div class="card">
-    <h1>➕ Suma App</h1>
-    <p>Ingresa dos números para calcular el resultado</p>
-    <div class="input-group">
-        <label for="num1">Primer Número</label>
-        <input type="number" id="num1" placeholder="Ej. 15" step="any">
-    </div>
-    <div class="input-group">
-        <label for="num2">Segundo Número</label>
-        <input type="number" id="num2" placeholder="Ej. 25" step="any">
-    </div>
-    <button onclick="realizarSuma()">Sumar Números</button>
-    <div id="resultado" class="result-box"></div>
-</div>
-
-<script>
-    function realizarSuma() {
-        const n1 = parseFloat(document.getElementById('num1').value);
-        const n2 = parseFloat(document.getElementById('num2').value);
-        const resDiv = document.getElementById('resultado');
-
-        if (!isNaN(n1) && !isNaN(n2)) {
-            const suma = n1 + n2;
-            resDiv.innerText = `La suma de ${n1} y ${n2} es: ${suma}`;
-            resDiv.style.display = 'block';
-        } else {
-            resDiv.innerText = '⚠️ Por favor ingresa dos números válidos';
-            resDiv.style.display = 'block';
-        }
-    }
-</script>
-</body>
+<body><main class="wrap"><a class="back" href="../">← Volver a la mesa de trabajo</a><div class="layout"><section class="paper"><span class="badge">🍏 MODO SUMA</span><h1>Sumemos juntos</h1><p>Escribe dos números y deja que Python haga la magia.</p><div class="field"><label for="num1">Primer número</label><input id="num1" type="number" step="any" placeholder="Ej. 12"></div><div class="field"><label for="num2">Segundo número</label><input id="num2" type="number" step="any" placeholder="Ej. 8"></div><div class="buttons"><button class="go" type="button" onclick="calcular()">✨ Sumar</button><button class="clear" type="button" onclick="limpiar()">Limpiar</button><button class="clear" type="button" onclick="aleatorio()">🎲 Aleatorio</button></div><div class="result" id="resultado" aria-live="polite">Aquí aparecerá la respuesta.<small>Completa los dos campos para comenzar.</small></div><button class="clear" type="button" onclick="copiarResultado()">📋 Copiar resultado</button></section><aside class="history"><h3>📒 Mis cuentas</h3><p>Se quedan guardadas en este dispositivo.</p><ol id="historial"></ol><button type="button" onclick="borrarHistorial()">Borrar notas</button></aside></div></main>
+<script>const a=document.getElementById('num1'),b=document.getElementById('num2'),r=document.getElementById('resultado'),h=document.getElementById('historial');let items=JSON.parse(localStorage.getItem('angel-suma')||'[]');function pintar(){h.innerHTML=items.length?items.map(x=>`<li>${x}</li>`).join(''):'<li>Aún no hay cuentas.</li>'}function calcular(){if(a.value===''||b.value===''){r.innerHTML='🤔 Faltan números.<small>Completa los dos campos.</small>';return}const v=Number(a.value)+Number(b.value);r.innerHTML=`🎉 ${a.value} + ${b.value} = ${v}<small>Resultado listo.</small>`;items.unshift(`${a.value} + ${b.value} = ${v}`);items=items.slice(0,6);localStorage.setItem('angel-suma',JSON.stringify(items));pintar()}function aleatorio(){a.value=Math.floor(Math.random()*100)+1;b.value=Math.floor(Math.random()*100)+1;calcular()}function limpiar(){a.value='';b.value='';r.innerHTML='Aquí aparecerá la respuesta.<small>Completa los dos campos para comenzar.</small>'}async function copiarResultado(){if(r.textContent.includes('Resultado listo')){await navigator.clipboard.writeText(r.textContent);r.innerHTML='✅ Copiado al portapapeles.<small>Listo para pegar donde quieras.</small>'}}function borrarHistorial(){items=[];localStorage.removeItem('angel-suma');pintar()}[a,b].forEach(x=>x.addEventListener('keydown',e=>{if(e.key==='Enter')calcular()}));pintar();</script></body>
 </html>

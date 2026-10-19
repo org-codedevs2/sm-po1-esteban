@@ -54,6 +54,8 @@ jobs:
 
       - name: ⚙️ Configurar Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: 📤 Cargar artefactos web (Suma y Resta)
         uses: actions/upload-pages-artifact@v3

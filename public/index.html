@@ -1,25 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-App Python & Actions</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
-        body { background: #0f172a; color: white; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .card { background: #1e293b; border: 1px solid #334155; padding: 30px; border-radius: 16px; text-align: center; max-width: 400px; width: 100%; }
-        h1 { margin-bottom: 20px; color: #38bdf8; }
-        .btn { display: block; padding: 14px; margin: 12px 0; border-radius: 10px; font-weight: bold; text-decoration: none; color: white; transition: 0.2s; }
-        .btn-suma { background: #0284c7; }
-        .btn-resta { background: #7c3aed; }
-        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
-    </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La calculadora de Angel</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;color:#203b36;font-family:"Trebuchet MS",Arial,sans-serif;background:#dff1df url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%2398c5a0' stroke-width='1' opacity='.35'%3E%3Cpath d='M0 40h80M40 0v80'/%3E%3C/g%3E%3C/svg%3E")}.page{width:min(920px,100%);margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:16px}.hello{font-size:1.1rem;font-weight:800}.profile{color:#286b53;font-size:.9rem;font-weight:800;text-decoration:none}.profile:hover{text-decoration:underline}.hero{position:relative;margin:40px 0 25px;padding:38px 34px;border:2px solid #285345;border-radius:28px 8px 28px 8px;background:#f9fff3;box-shadow:8px 9px 0 #72a987}.hero:after{content:"✨";position:absolute;right:24px;top:20px;font-size:2rem;animation:float 2.8s ease-in-out infinite}@keyframes float{50%{transform:translateY(-7px) rotate(8deg)}}.eyebrow{color:#27745d;font-size:.8rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.hero h1{max-width:700px;margin:12px 0;font-family:Georgia,serif;font-size:clamp(2.5rem,7vw,5.2rem);line-height:.95}.hero p{max-width:590px;color:#557467;font-size:1.06rem;line-height:1.6}.mascot{display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:9px 14px;border:1px solid #8dbd9a;border-radius:999px;color:#35664c;background:#e6f6df;font-size:.85rem;font-weight:800}.mascot b{font-size:1.5rem}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.card{padding:26px;border:2px solid #285345;border-radius:18px;color:#203b36;text-decoration:none;transition:transform .2s,box-shadow .2s}.card:hover{transform:rotate(-1.5deg) translateY(-5px);box-shadow:7px 8px 0 #285345}.card:nth-child(2):hover{transform:rotate(1.5deg) translateY(-5px)}.suma{background:#c9e6a5}.resta{background:#a9dcd8}.emoji{font-size:2.7rem}.card h2{margin:14px 0 8px;font-family:Georgia,serif;font-size:1.65rem}.card p{margin:0;color:#4e6d5c;line-height:1.5}.open{display:inline-block;margin-top:20px;padding:9px 13px;border-radius:999px;background:#f9fff3;font-weight:800}.note{display:inline-block;margin-top:27px;padding:10px 15px;background:#f4d77d;transform:rotate(-2deg);font-size:.9rem;font-weight:700}@media(max-width:620px){.cards{grid-template-columns:1fr}.hero{padding:32px 24px}.top{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
-<body>
-    <div class="card">
-        <h1>🚀 Mis Aplicaciones</h1>
-        <a href="./suma/" class="btn btn-suma">➕ Ir a App de Suma</a>
-        <a href="./resta/" class="btn btn-resta">➖ Ir a App de Resta</a>
-    </div>
-</body>
+<body><main class="page"><header class="top"><div class="hello">👋 Hola, soy Angel</div><a class="profile" href="https://github.com/angelcamayojm-wq" target="_blank" rel="noopener">🐙 Ver mi perfil de GitHub</a></header><section class="hero"><div class="eyebrow">Mi pequeño rincón de operaciones</div><h1>¿Qué calculamos hoy?</h1><p>Escoge una opción y juega con los números. Sencillo, colorido y sin complicaciones.</p><div class="mascot"><b>🦸‍♂️</b> Laboratorio hecho por Angel · modo héroe activado</div></section><section class="cards"><a class="card suma" href="./suma/"><div class="emoji">🍏➕</div><h2>Vamos a sumar</h2><p>Junta dos números y mira cómo crece el resultado.</p><span class="open">Abrir suma →</span></a><a class="card resta" href="./resta/"><div class="emoji">🌿➖</div><h2>Vamos a restar</h2><p>Quita un número del otro y descubre la diferencia.</p><span class="open">Abrir resta →</span></a></section><div class="note">💡 Consejo: también puedes presionar Enter para calcular.</div></main></body>
 </html>
